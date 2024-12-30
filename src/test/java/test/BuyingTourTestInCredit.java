@@ -7,6 +7,7 @@ import data.SQLHelper;
 import page.MainPage;
 
 import static com.codeborne.selenide.Selenide.open;
+import static data.SQLHelper.getStatusLastLineCreditRequestEntity;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static data.SQLHelper.cleanDatabase;
 
@@ -42,7 +43,7 @@ public class BuyingTourTestInCredit {
         mainPage.enteringValidOwner();
         mainPage.enteringValidCVC();
         mainPage.verifySuccessfulNotification("Операция одобрена Банком.");
-        var actualStatusLastLineCreditRequestEntity = SQLHelper.getStatusLastLineCreditRequestEntity();
+        var actualStatusLastLineCreditRequestEntity = getStatusLastLineCreditRequestEntity();
         var expectedStatus = "APPROVED";
         assertEquals(actualStatusLastLineCreditRequestEntity, expectedStatus);
     }

@@ -6,15 +6,27 @@
       <option name="ignoredModules">
         <list>
           <option value="Diplome" />
+          <option value="Diplome" />
+          <option value="Diplome" />
+          <option value="Diplome" />
+          <option value="Diplome" />
         </list>
       </option>
       <option name="ignoredPackages">
         <list>
           <option value="org.codehaus.groovy:groovy:3.0.2" />
+          <option value="io.netty:netty-codec-http:4.1.92.Final" />
+          <option value="mysql:mysql-connector-java:8.0.28" />
+          <option value="org.yaml:snakeyaml:1.23" />
+          <option value="org.apache.httpcomponents:httpclient:4.5.3" />
         </list>
       </option>
       <option name="ignoredReasons">
         <list>
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
           <option value="Not exploitable" />
         </list>
       </option>

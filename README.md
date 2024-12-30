@@ -13,10 +13,9 @@
 2.	В терминале запустить приложение aqa-shop.jar:
 
 *	Для тестирования запросов в БД MySQL команда java -jar ./artifacts/aqa-shop.jar
-*	Для тестирования запросов в БД PostgreSQL
-     
-  java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/db 
-
+*	Для тестирования запросов в БД PostgreSQL 
+java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/db  
+   
 -Dspring.datasource.username=app
 
 -Dspring.datasource.password=pass -jar aqa-shop.jar. 
